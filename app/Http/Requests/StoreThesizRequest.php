@@ -30,7 +30,7 @@ class StoreThesizRequest extends FormRequest
             'date_process' => ['nullable', 'date'],
             'page_number' => ['nullable', 'integer'],
             'course_id' => ['required', 'integer'],
-            'files' => ['required', 'file', 'max:5120'],
+            'files' => ['nullable', 'file', 'max:5120'],
         ];
     }
 }
