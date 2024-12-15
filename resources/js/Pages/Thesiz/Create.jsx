@@ -57,7 +57,7 @@ const Create = ({ auth, courses, authors }) => {
                                     onChange={(e) =>
                                         setData("files", e.target.files[0])
                                     }
-                                   
+                                    error={errors.files}
                                 />
                             </div>
                         </div>
